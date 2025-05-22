@@ -3,24 +3,84 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home-Roofing Co.</title>
+		<title>Roofing Co.</title>
+		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 	<body>
 		<header>
 			<h1>Roofing Co.</h1>
 			<nav>
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="contact.html">Contact</a>
+				<a href="#index">Home</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
 			</nav>
 		</header>
-		<main>
-			<h3>Quality Roof, Built to Last</h3>
-			<p>
-				We provide professional roofing services for homes and businesses.
-				Whether you need a repair or a new roof, we've got you covered.
-			</p>
-		</main>
+		<section id="home">
+			<main>
+				<h3>Quality Roof, Built to Last</h3>
+				<p>
+					We provide professional roofing services for homes and businesses.
+					Whether you need a repair or a new roof, we've got you covered.
+				</p>
+			</main>
+		</section>
+		<section id="about">
+			<main>
+				<h2>Built on Trust, Backed by Experience</h2>
+				<p>
+					Roofing Co. has been providing top-tier roofing services for over a
+					decade. We are proud to serve homeowners and businesses with reliable,
+					affordable, and long-lasting solutions.
+				</p>
+
+				<h3>Our Mission</h3>
+				<p>
+					To protect and enhance homes through quality craftsmanship, honest
+					work, and exceptional customer service.
+				</p>
+
+				<h3>Why Choose Us?</h3>
+				<ul>
+					<li>✅ Over 10 years of industry experience</li>
+					<li>✅ Licensed and insured roofing professionals</li>
+					<li>✅ High-quality materials and guaranteed workmanship</li>
+					<li>✅ Fast, free estimates</li>
+					<li>✅ Locally owned and community-focused</li>
+				</ul>
+
+				<h3>What We Offer</h3>
+				<p>
+					From minor repairs to full roof replacements, we specialize in asphalt
+					shingles, flat roofs, storm damage repair, and regular maintenance
+					plans.
+				</p>
+			</main>
+		</section>
+		<section id="contact">
+			<main>
+				<form action="" method="get">
+					<div>
+						<label for="name">Enter your name: </label>
+						<input type="text" name="name" id="name" required />
+						<label for="email">Enter you Email</label>
+						<input type="email" name="email" id="email" required />
+						<label for="service">Please select a service</label>
+						<select name="service" id="service-select" required>
+							<option value="">--Please choose a service--</option>
+							<option value="roof-installation">Roof Installation</option>
+							<option value="roof-repair">Roof Repair</option>
+							<option value="roof-inspection">Roof Inspection</option>
+							<option value="gutter-replacement">Gutter Replacement</option>
+							<option value="storm-damage-repair">Storm Damage Repair</option>
+							<option value="roof-maintenance">Roof Maintenance</option>
+						</select>
+						<label for="message">Enter a message (Optional)</label>
+						<input type="text" />
+					</div>
+					<input type="submit" value="Submit" />
+				</form>
+			</main>
+		</section>
 		<footer><p>&copy; Home-Roofing Co.</p></footer>
 	</body>
 </html>
